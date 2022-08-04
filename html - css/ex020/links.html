@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        
+        # id
+        . class
+        : pseudoClass
+        :: pseudoElement
+        > child
+
+        */
+
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:visited {             /* realiza uma ação ao visitar*/
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green; /* realiza uma ação enquanto estiver segurando o click do mouse*/
+        }
+
+
+        a::after{ /* Esse pseudoElemento permite fazer algo logo depois da referida tag, id ou class, no caso desse exemplo,  <a> . */
+            content: ' [link] ';/*"Content" permite escrever algo */
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <h3>com PseudoClass e PseudoElements</h3>
+
+    <ul>
+        <li><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank">Paleta de Cores Adobe</a></li>
+        <li><a href="https://www.dafont.com/pt/" target="_blank" >Banco de fontes para usar em CSS</a></li>
+        <li><a href="https://www.pexels.com/pt-br/" target="_blank">Banco de imagens gratuitas para usar em CSS</a></li>
+    </ul>
+    
+</body>
+</html>

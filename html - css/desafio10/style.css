@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android' ;
+    src: url("idroid.otf");
+    font-weight: normal;
+}
+
+:root {
+
+    /* o root é o responsavel por criar variaveis. Cria-se variáveis por meio dos 2 traços: -- como no exempo abaixo.*/
+
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;            
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);    
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    padding: 30px;
+    text-align: center;
+}
+
+header > h1 {
+    padding: 20px;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.452);
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+}
+
+header > p {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2rem;
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.452);
+}
+
+nav {
+    padding: 10px;
+    background-color: var(--cor5);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.384);
+}
+
+nav > a {
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main {
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    display: block;
+    margin: auto;      /*Foi gerado uma classe para essa imagem nao aumentar mtu na responsividade*/
+    max-width: 350px;
+}
+
+main h1 {
+    color: var(--cor3);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-weight: normal;
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent ); /* Efeito top */
+    text-indent: 10px;
+}
+
+main p {
+    margin: 15px 0px;  /* Configurando 15px cima e baixo ; e 0px para os lados (esq e dir) */
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em; /* espaçamento entre as linhas do parágrafo*/
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    background-color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 6px;
+    color: var(--cor5);
+}
+
+a.externo::after {
+    content: '\00a0\1f517';    /* Foi criado uma class para confiurar um emoji apos os links externos (notasse que usamos Pseudo Elemento After para poupar trabalho e usamos o content que é o conteudo que queremos adiconar no pseudoElementoAfter, sendo um espaço e um emoji.*/
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+
+    position: relative;
+    padding-bottom: 50%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.349);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00a0\00a0'; /* Muda o Tipo Estilo da bolinha do UL list (a primeira seuqncia numerica é o codigo do simbolo "check" e a segunda é o codigo do espaço. No caso, foram dois espaçamentos. */
+    list-style-position: inside;   /* Configura para as bolinhas ficarem dentro da div na qual o ul está inserido, nesse caso nosso UL está dentro do ASIDE. */
+    columns: 2; /* Esse comando permite dividir em COLUNAS nossa UL, nesse caso, foram 2 colunas*/
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    background-color: var(--cor5);
+    color: white;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+

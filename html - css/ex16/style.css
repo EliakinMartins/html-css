@@ -1,0 +1,33 @@
+@charset "UTF-8";  /* Regra para não haver problemas com caracteres especiais */
+
+* {  /* O Asterisco se refere a mudanças globais no site */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #3D314A, #684756);
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #25181e8f; /* Sombras - Lado, Baixo, Espalhamento, Cor; */
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    color: #969696;
+    text-align: center;
+    text-shadow: 1px 1px 0px #333333da;
+}
+
+h2 {
+    color: #B79D94;
+    
+}
+
+p {
+    text-align: justify;
+}

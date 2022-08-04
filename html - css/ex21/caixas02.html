@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header{
+            padding: 10px;
+            background-color: lightgreen;
+            margin: 10px;
+        }
+
+        nav {
+            padding: 10px;
+            background-color: darkgray;
+        }
+
+        nav > a {
+            margin-right: 8px;
+            color:  lightgreen;
+            
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-weight: bolder;
+            font-size: 1.1rem;
+            color: green;
+        }
+
+        main {
+            background-color: rgb(230, 213, 191);
+            margin: 10px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 0, 0, 0.274);
+            border-radius: 20px 0px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 5px;
+            background-color: white;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 0, 0, 0.274);
+            border-radius: 20px 0px;
+        }
+
+        aside {
+            text-align: right;
+        }
+
+        h2 {
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        p {
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        #especial {
+            margin: auto;
+            background-color: rgba(0, 128, 0, 0.473);
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçalho -->
+        <h1>Nome do Site</h1>
+        <nav> <!-- Navegadores / Menus -->
+            <a href="">menu1</a>
+            <a href="">menu2</a>
+            <a href="">menu3</a>
+            <a href="">menu4</a>
+        </nav>
+    </header>
+    <main> <!-- Conteudo Principal do site / body -->
+        <section> <!-- Sessões -->
+            <article> <!-- Divisões das Sessões -->
+                <h2>Noticias</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestiae fugit nobis, doloremque placeat repellendus distinctio reiciendis! Aliquid, molestiae ut minima consequatur deleniti repudiandae suscipit? Vitae in aliquam recusandae consequatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id nam accusamus asperiores odit, architecto libero neque eveniet accusantium consequuntur, doloremque dolor deleniti harum consequatur quod et itaque adipisci rem! Optio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, et dolorem? Quae dolorem tempore corrupti voluptatum asperiores mollitia fugiat laboriosam cupiditate magnam, sint ipsum nemo, expedita laborum ad est necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, adipisci deserunt aliquid voluptas quas ullam reiciendis. Doloribus dignissimos tenetur, officia ullam necessitatibus natus, iusto laboriosam qui saepe quos ipsa! Suscipit.</p>
+                <aside> <!-- Divisão ao lado dentro da sessão -->
+                    <p>Questão levantada pelo renomado Dr. Fulano da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Esportes, Tecnologia e Cinema</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit obcaecati earum vitae, deleniti aspernatur quibusdam quisquam laudantium asperiores aliquam laborum impedit mollitia consequatur quam tempora quae distinctio, eveniet ducimus ex.</p>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé do site -->
+        <p>Desenvolvido por &copy; Eliakin Martins</p>
+    </footer>
+    <div id="especial"></div>
+</body>
+</html>

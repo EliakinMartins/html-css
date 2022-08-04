@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        .quadrado{
+            display: inline-block;
+            background-color: grey;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .quadrado:hover {
+            background-color: rgb(255, 238, 0);
+        }
+
+        #outra:hover{
+            color: green;
+        }
+
+        #outra > p{
+            display: none;
+        }
+
+        #outra:hover > p{
+            display: block;
+            color: red;
+            font-size: 2rem;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="quadrado">01</div>
+    <div class="quadrado">02</div>
+    <div class="quadrado">03</div>
+
+    <h1>Exemplo de texto oculto</h1>
+    <div id="outra">
+        PASSE O MOUSE AQUI !!!!
+        <p>ACHOOUUU ABESTATO !!!!</p>
+    </div>
+</body>
+</html>
