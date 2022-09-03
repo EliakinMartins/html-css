@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando em iframes</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            height: 10vh;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+
+        }
+
+        p {
+            margin: 30px;
+            text-align: justify;
+            text-indent: 50px;
+            line-height: 35px;
+            font-size: 1.5em;
+        }
+
+        nav, ul, li {
+            font-size: 1.3em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        a {
+            box-shadow: inset 2px 2px 7px black;
+            background-color: lightcoral;
+            padding: 20px;
+            border-radius: 100% ;
+            text-decoration: none;
+            list-style: none;
+            color: white;
+        }
+
+        iframe {
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px black;
+            display: block;
+            margin: auto;
+            width: 900px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Navegando em iframes</h1>
+        <ul>
+            <li><a href="pag1.html" target="janela">1</a></li>
+            <li><a href="pag2.html" target="janela">2</a></li>
+        </ul>
+    </header>
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ipsum voluptatum possimus amet, animi excepturi dolore corrupti quisquam reiciendis ratione deserunt ex quam atque, culpa sapiente harum quia nisi! Impedit excepturi commodi provident iusto reiciendis. Exercitationem corporis architecto beatae alias ratione doloribus aperiam quaerat quod ullam, sint officia sequi aliquid earum cum? Vitae possimus iusto cupiditate nihil fuga vero quia earum aspernatur autem id sint amet quaerat, quisquam explicabo sapiente! Eos corporis dicta qui, magnam quis praesentium architecto possimus in perspiciatis maxime, dolorum, ipsum animi doloribus temporibus veritatis necessitatibus omnis! Eos expedita cupiditate, veritatis hic similique accusamus quae animi aut unde quibusdam, at tempora quaerat dolores ipsum eveniet delectus quisquam beatae laborum ipsa culpa? Modi aperiam quos possimus dolorem sapiente? Molestias, inventore magni! Ullam alias, officiis, distinctio voluptatibus ipsa possimus assumenda eos aut nesciunt nam exercitationem recusandae sint voluptate natus facere, totam quis rem aperiam nemo deleniti neque.</p>
+
+        <iframe src="img/web.png" name="janela" frameborder="1"></iframe>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ipsum voluptatum possimus amet, animi excepturi dolore corrupti quisquam reiciendis ratione deserunt ex quam atque, culpa sapiente harum quia nisi! Impedit excepturi commodi provident iusto reiciendis. Exercitationem corporis architecto beatae alias ratione doloribus aperiam quaerat quod ullam, sint officia sequi aliquid earum cum? Vitae possimus iusto cupiditate nihil fuga vero quia earum aspernatur autem id sint amet quaerat, quisquam explicabo sapiente! Eos corporis dicta qui, magnam quis praesentium architecto possimus in perspiciatis maxime, dolorum, ipsum animi doloribus temporibus veritatis necessitatibus omnis! Eos expedita cupiditate, veritatis hic similique accusamus quae animi aut unde quibusdam, at tempora quaerat dolores ipsum eveniet delectus quisquam beatae laborum ipsa culpa? Modi aperiam quos possimus dolorem sapiente? Molestias, inventore magni! Ullam alias, officiis, distinctio voluptatibus ipsa possimus assumenda eos aut nesciunt nam exercitationem recusandae sint voluptatem illo maiores animi molestiae dolorum mollitia molestias unde iste! Perspiciatis sequi et iste architecto doloremque magnam, facere sunt ad dolore placeat libero, qui at. Voluptatem inventore accusamus libero reiciendis porro consectetur recusandae neque nam culpa error vero qui blanditiis iure at adipisci dolore earum hic, doloribus, accusantium nihil officiis mollitia. Cumque deserunt natus facere, totam quis rem aperiam nemo deleniti neque.</p>
+    </article>
+</body>
+</html>
