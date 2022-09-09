@@ -1,3 +1,10 @@
 @charset "UTF-8";
 
 /* Configurações Em Pé (Portrait)*/
+
+html, body {
+    background-image: url(../img/cev-portrait.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
