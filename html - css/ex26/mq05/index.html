@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Media Queries</title>
+</head>
+<body onresize="mundouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burger" onclick="clickMenu()" class="material-symbols-outlined">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">opção 1</a></li>
+                <li><a href="#">opção 2</a></li>
+                <li><a href="#">opção 3</a></li>
+                <li><a href="#">opção 4</a></li>
+                <li><a href="#">opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2> Testando Midia Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsa quia ipsam dolor dignissimos reprehenderit nobis nisi officia voluptate, iste aliquam, quis praesentium nostrum, rem quod consectetur nulla sequi. Atque!</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dicta iusto deserunt optio molestias id dolores in neque sequi veritatis alias culpa quam repudiandae asperiores quaerat provident adipisci ea sapiente.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis architecto saepe iure repudiandae, at similique minus non magnam dignissimos aut qui corporis quo, quos consectetur veritatis maiores debitis ipsum est!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum obcaecati aliquam, delectus cupiditate ex voluptas repellendus sint iste sequi consequatur. Praesentium quaerat iusto sequi adipisci asperiores assumenda laudantium cupiditate!</p>
+        </article>
+    </main>
+    <script>
+        function mundouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            } else
+                 itens.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
